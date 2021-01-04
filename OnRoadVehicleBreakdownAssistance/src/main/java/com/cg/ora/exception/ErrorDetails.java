@@ -2,6 +2,12 @@ package com.cg.ora.exception;
 
 import java.util.Date;
 
+/**
+ * This class is an entity class for Error Details
+ * @author prapti suraj
+ * @since 2020-12-31
+ */
+
 public class ErrorDetails {
 	private Date timeStamp;
 	private String message;	

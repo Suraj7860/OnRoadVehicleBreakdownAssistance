@@ -14,6 +14,12 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+/**
+ * This class is an entity class for User. It contains all the details about User body
+ * @author saifyn arfia
+ * @since 2020-12-28
+ */
+
 	@Entity
 	@Table(name="UserInfo")
 	public class User {
@@ -36,9 +42,9 @@ import javax.persistence.Id;
 	private BigInteger userPhoneNumber;
 	
 	
-	@Email
+	@Email(message="Email id is not valid")
 	@NotNull
-	@Column (name="useremailid")
+	@Column (name="useremailid",unique=true)
 	private String userEmailId;
 	
 	@NotNull

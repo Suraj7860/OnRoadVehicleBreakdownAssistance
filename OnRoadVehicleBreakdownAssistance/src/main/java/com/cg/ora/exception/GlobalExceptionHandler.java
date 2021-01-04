@@ -8,6 +8,12 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
+/**
+ * This class is a global exception handler class which handles all exceptions
+ * @author prapti suraj
+ * @since 2020-12-30
+ */
+
 @ControllerAdvice
 public class GlobalExceptionHandler {
 	

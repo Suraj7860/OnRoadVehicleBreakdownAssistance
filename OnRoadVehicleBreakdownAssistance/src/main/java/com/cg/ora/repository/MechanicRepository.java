@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.cg.ora.model.Mechanic;
 
-// Creating Mechanic Repository
+//This interface extends JpaRepository having parameters of Mechanic class and unique key of type integer
 
 public interface MechanicRepository extends JpaRepository<Mechanic, Integer> {
 
@@ -15,6 +15,10 @@ public interface MechanicRepository extends JpaRepository<Mechanic, Integer> {
 	public void deleteByMechanicId(int mechanicId);
 
 	public Mechanic findByMechanicId(int mechanicId);
+
+	public Mechanic findByMechanicEmailId(String email);
+	
+	
 	
 
 }

@@ -14,6 +14,11 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+/**
+ * This class is an entity class for Mechanic. It contains all the details about Mechanic body
+ * @author ashwini ruskikesh
+ * @since 2020-12-28
+ */
 
 @Entity
 @Table(name="Mechanic")
@@ -44,7 +49,7 @@ public class Mechanic {
 
 	@Email
 	@NotNull
-	@Column(name="mechanicemailid")
+	@Column(name="mechanicemailid",unique=true)
 	private String mechanicEmailId;
 		
 	@NotNull

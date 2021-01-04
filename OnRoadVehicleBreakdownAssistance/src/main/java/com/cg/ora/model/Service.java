@@ -13,6 +13,12 @@ import javax.validation.constraints.Size;
 
 import com.sun.istack.NotNull;
 
+/**
+ * This class is an entity class for Service. It contains all the details about Service body
+ * @author prapti suraj
+ * @since 2020-12-28
+ */
+
 @Entity
 @Table(name = "Service")
 public class Service {

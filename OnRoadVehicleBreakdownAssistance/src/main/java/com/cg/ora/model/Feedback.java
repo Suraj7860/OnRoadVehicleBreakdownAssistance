@@ -19,6 +19,11 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
+/**
+ * This class is an entity class for Feedback. It contains all the details about Feedback body
+ * @author prapti suraj
+ * @since 2020-12-28
+ */
 
 @Entity
 @Table(name="feedback")
